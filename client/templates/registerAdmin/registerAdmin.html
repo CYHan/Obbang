@@ -1,0 +1,61 @@
+<template name="registerAdmin">
+
+    <script>
+        function autotab(current, to) {
+            if (current.getAttribute &&
+                    current.value.length == current.getAttribute("maxlength")) {
+                to.focus()
+            } else if(current == 0){
+                goBtn();
+            }
+        }
+        function goBtn() {
+            $('#apply-admin').focus();
+        }
+    </script>
+
+    <div class="section-insert-registerAdmin">
+        <div class="txt-insert-registerAdmin">매장명</div>
+        <input name="store-name" class="input-insert-registerAdmin" id="store-name" type="text"/>
+    </div>
+    <div class="section-insert-registerAdmin">
+        <div class="txt-insert-registerAdmin">전화번호</div>
+        <input name="store-tel" class="input-insert-registerAdmin" id="store-tel" type="tel"/>
+    </div>
+
+    <div class="section-insert-registerAdmin">
+        <div class="txt-insert-registerAdmin">쿠폰승인번호</div>
+        <form id="group-pwd-registerAdmin" name="pwd">
+            <input name="pwd0" id='firstInput' type="password" maxlength="1"
+                   onkeyup="autotab(this, document.pwd.pwd1);">
+            <input name="pwd1" type="password" maxlength="1" onkeyup="autotab(this, document.pwd.pwd2);">
+            <input name="pwd2" type="password" maxlength="1" onkeyup="autotab(this, document.pwd.pwd3);">
+            <input name="pwd3" type="password" maxlength="1" onkeyup="autotab(this, document.pwdchk.pwd4);">
+        </form>
+    </div>
+    <div class="section-insert-registerAdmin">
+        <div class="txt-insert-registerAdmin">쿠폰승인번호확인</div>
+        <form id="group-pwdforcheck-registerAdmin" name="pwdchk">
+            <input name="pwd4" type="password" maxlength="1" onkeyup="autotab(this, document.pwdchk.pwd5);">
+            <input name="pwd5" type="password" maxlength="1" onkeyup="autotab(this, document.pwdchk.pwd6);">
+            <input name="pwd6" type="password" maxlength="1" onkeyup="autotab(this, document.pwdchk.pwd7);">
+            <input name="pwd7" type="password" maxlength="1" onkeyup="autotab(0);">
+        </form>
+    </div>
+    <button name="complete" id="apply-admin" class="btn-ohbbang">완료</button>
+</template>
+
+<template name="layoutRegisterAdmin">
+
+    <nav class="navbar navbar-fixed-top">
+        <a name="left" class="btn btn-default btn-small" href="/login">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        </a>
+        <div name="center" class="text-center">
+            점주 등록
+        </div>
+    </nav>
+    <div class="container-default">
+        {{>yield}}
+    </div>
+</template>

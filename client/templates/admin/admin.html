@@ -1,0 +1,64 @@
+<template name="layoutAdmin">
+    {{> navbarAdmin}}
+    {{> tabAdmin}}
+    {{> yield}}
+</template>
+
+<!-- 전체적인 페이지 구조이다.  3개의 템플릿으로 구성되는 페이지 이다.-->
+
+<template name="admin">
+    <div class="container-withtabs">
+        <table class="tbl-product-admin">
+            <tbody>
+            <th>상품</th>
+            <th>수량</th>
+            <th>남은시간</th>
+            <th>가격</th>
+            <th></th>
+            {{#each listProduct}}     <!--  각각의 listProduct에 대하여 loop (이때, listProduct는 admin.helper에서 호출)-->
+                {{>itemProductAdmin}} <!-- loop마다 템플릿을 통한 레이아웃이 추가된다. -->
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</template>
+
+<!-- admin에 대한 기본 레이아웃이다. -->
+
+<template name="itemProductAdmin">
+    <tr>
+        <td><!-- 아래에서 사용하는 것들은 router로부터 가지고 와서 사용하는 것 들이다.  -->
+            <img src="{{imageId}}" class="img-circle">      <!-- 이미지를 collection으로 부터 가지고와서 출력 -->
+            <div>{{name}}</div>             <!-- name을 collection 으로 부터 -->
+        </td>                                  <!-- helper 를 통해 가지고 올 수 도있지만 router를 통해서 뿌려줄 수도있다.-->
+        <td>{{quantityLeft}}</td>             <!--  이부분이 가독성에 굉장히 좋지않다고 생각하지만 편의를 위해 사용-->
+        <td class="countdown"></td>
+        <td>{{priceCurrent}}</td>
+        <td>
+            <a name="remove" class="btn">
+                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </a>
+        </td>
+    </tr>
+</template>
+
+<!--navbar-->       <!-- 네비게이션 바이다. -->
+<template name="navbarAdmin">
+    <nav class="navbar navbar-fixed-top">  <!-- nav태그는 링크요소들의 집합으로 사용된다. -->
+        <span name="navbar-menu">{{> navbarMenu}}</span>   <!-- span tag는 일반 text의 속성등을 조절하기위해 삽입하여사용 -->
+        <!--  navbarMenu 템플릿을 사이에 끼워서 출력-->
+        <img name="navbar-logo" src="/resources/img/ui/navbar-logo.png" class="img-responsive"/>
+        <a name="right" class="btn" href="/registerProduct">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+        </a>
+    </nav>
+</template>
+
+<!--tab-->          <!-- 두번째 레이아웃-->
+<template name="tabAdmin">
+    <ul class="nav-tabs-admin">
+        <li role="presentation"><a class ="current" href="/admin" name="tab-registerProduct">등록상품</a></li>
+        <li role="presentation"><a name="tab-saleManage">판매관리</a></li>
+    </ul>
+</template>
+

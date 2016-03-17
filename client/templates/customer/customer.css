@@ -1,0 +1,219 @@
+
+/****************
+****container****
+*****************/
+
+.margin-zero [class*="list-group"] {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+
+.round-zero:first-child [class*="list-group"], .round-zero:last-child [class*="list-group"] {
+    border-radius: 0;
+}
+
+.list-group-item.title-store {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+a[group=btn-check]{
+    float: right;
+
+}
+a[group=btn-check] img{
+    width: 17px;
+    height: 17px;
+}
+
+a[group=btn-plus] {
+    float: right;
+    color:  #B3B3B3;
+    border: 2px solid #B3B3B3;
+    border-radius: 0px;
+}
+
+a[group=btn-plus]:active {
+    color:  #E24B73;
+    border: 2px solid #E24B73;
+}
+
+a[group=btn-minus] {
+    float: left;
+    color:  #B3B3B3;
+    border: 2px solid #B3B3B3;
+    border-radius: 0px;
+}
+a[group=btn-minus]:active {
+    color:  #E24B73;
+    border: 2px solid #E24B73;
+}
+
+.title-product {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.product-price {
+    display: inline-table;
+    margin: 0;
+}
+
+.product-price h4 {
+    margin: inherit;
+}
+
+.list-group-item.item-product-customer {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.tbl-itemProductCustomer {
+    width: 100%;
+}
+
+.tbl-itemProductCustomer > tr > td > {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+}
+
+.tbl-itemProductCustomer > tr:first-child > td:first-child {
+    width: 120px;
+}
+
+.tbl-itemProductCustomer > tr > td > img {
+    width: 100px;
+    height: 100px;
+}
+
+/**************
+****modal******
+***************/
+.modal-main-body{
+    position: relative;
+    padding: 0 0 15px 0;
+}
+
+.modal-header-modalCustomer {
+    min-height: 16.42857143px;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.modal-header-modalCustomer h6{
+    display: inline-block;
+}
+.modal-header-modalCustomer .modal-close {
+    display: inline-block;
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    float:right;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    color:#000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+.modal-upper-body{
+    background-image: url(/resources/img/ui/customer/modal-body-background.png);
+    height:100px;
+}
+
+.modal-footer-modalCustomer{
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+
+#modal-discount-percentage{
+    position: relative;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    width: 74px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #E24B73;
+    color: #E24B73;
+}
+
+#group-pwd{
+}
+#group-price-total{
+}
+
+.modal-price-total{
+    position: relative;
+    z-index: 2;
+    top:0px;
+    color: gray;
+    font-size: 15px;
+}
+.slash{
+    width: 68px;
+    height: 15px;
+    position: relative;
+    top:-21px;
+    z-index:3;
+}
+.modal-price-current{
+    position: relative;
+    top: -15px;
+    font-weight: 500;
+    font-size: 25px;
+}
+.input-group-sm>.form-control, .input-group-sm>.input-group-addon, .input-group-sm>.input-group-btn>.btn {
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.input-pwd {
+    display: inline-block;
+    margin: 20px 10px 0 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding: 6px 12px;
+    font-size: 15px;
+    color: #E24B73;
+    background-color: transparent;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.modal-tbl-product{
+    text-align: center;
+    margin: 10px auto;
+    width: 90%;
+    font-size: 10px;
+}
+.modal-tbl-product th{
+    text-align: center;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #B3B3B3;
+}
+.modal-tbl-product td{
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid #B3B3B3;
+}

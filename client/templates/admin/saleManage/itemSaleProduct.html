@@ -1,0 +1,11 @@
+<template name="itemSaleProduct">
+    {{#each listSaleProductDetail}}
+        <tr>
+            <td><img src="{{this.productOnDiscountImageId}}" class="img-circle"></td>
+            <td>{{this.productOnDiscountName}}</td>
+            <td>{{this.quantity}}</td>
+            <td><span>{{dateParent}}</span><br>{{timeParent}}</td>
+            <td>{{moneySale}}원</td>
+        </tr>
+    {{/each}}
+</template>

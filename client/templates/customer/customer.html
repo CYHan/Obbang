@@ -1,0 +1,150 @@
+<template name="customer">
+    {{#each listStore}}
+        {{>itemStoreCustomer}}
+    {{/each}}
+</template>
+
+<template name="itemStoreCustomer">
+    <div class="list-group margin-zero round-zero">
+        <a class="list-group-item title-store">{{storeName}}</a>
+        {{#each listProduct storeId}}
+            <div class="list-group-item item-product-customer">
+                {{>itemProductCustomer}}
+            </div>
+        {{/each}}
+    </div>
+</template>
+
+<template name="itemProductCustomer">
+    <table class="tbl-itemProductCustomer">
+        <tr>
+            <td rowspan="5"><img src="{{imageId}}"/></td>
+            <td><h5 class="title-product" id="name-{{_id}}">{{name}}</h5>
+                <a type="button" class="btn" group="btn-check" store={{storeId}} id="check-{{_id}}">
+                    <img id="unchecked-{{_id}}" src="/resources/img/ui/customer/button-unchecked.png">
+                    <img id="checked-{{_id}}" class="hidden" src="/resources/img/ui/customer/button-checked.png">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td><span class="countdown"></span> 남음</td>
+        </tr>
+        <tr>
+            <td>남은 수량: {{quantityLeft}}개</td>
+        </tr>
+        <tr class="text-center">
+            <td>
+                <a type="button" class="btn text-center" group="btn-minus" store={{storeId}}>
+                    <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                </a>
+                <table class="product-price">
+                    <tr>
+                        <td>
+                            <span class="count-product" id="label-{{_id}}">0</span> ×
+                            <span id="priceCurrent-{{_id}}">{{priceCurrent}}</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4>{{priceTotal}} 원</h4>
+                        </td>
+                    </tr>
+                </table>
+                <a type="button" group="btn-plus" class="btn text-center" store={{storeId}}>
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                </a>
+            </td>
+        </tr>
+    </table>
+</template>
+
+<template name="layoutCustomer">
+    <nav class="navbar navbar-fixed-top">
+        <span name="navbar-menu">{{> navbarMenu}}</span>
+        <img name="navbar-logo" src="/resources/img/ui/navbar-logo.png" class="img-responsive"/>
+    </nav>
+
+    <div class="container-withnavbottom">
+        {{>yield}}
+    </div>
+
+    <nav id="navbar-bottom-customer" class="navbar navbar-fixed-bottom  hidden">
+        총 수량 : <label id="quantity-checked-customer">0개</label>
+        <button id="btn-usecoupon-customer" class="btn-ohbbang" data-toggle="modal">쿠폰쓰기</button>
+        <br>
+        결제금액 : <label id="price-total-customer">0원</label>
+    </nav>
+
+    {{>modalCustomer}}
+
+</template>
+
+<template name="modalCustomer">
+
+    <script>
+        function autotab(current, to) {
+            if (current.getAttribute &&
+                    current.value.length == current.getAttribute("maxlength")) {
+                to.focus()
+            } else {
+                goBtn();
+            }
+        }
+        function goBtn() {
+            $('#btn-buy-modalCustomer').focus();
+        }
+    </script>
+
+    <div class="modal fade" id="modal-modalCustomer" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header-modalCustomer text-center">
+                    <h6 class="modal-title">구매대기목록</h6>
+                    <a type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></a>
+                </div>
+                <div class="modal-main-body">
+                    <div class="modal-upper-body ">
+                        <span id="modal-discount-percentage">
+                        {{discountPercentage}}%할인
+                        </span>
+                        <div id="group-price-total" class="text-center">
+                            <div class="modal-price-total">{{priceTotalNormal}}원</div>
+                            <div><img class="slash" src="/resources/img/ui/customer/slash.png"></div>
+                            <div class="modal-price-current">{{priceTotal}}원</div>
+                        </div>
+                        <form id="group-pwd" class="text-center" name="mpwd">
+                            <input name="mpwd0" class="input-pwd text-center" type="password" maxlength="1" onkeyup="autotab(this,document.mpwd.mpwd1);">
+                            <input name="mpwd1" class="input-pwd text-center" type="password" maxlength="1" onkeyup="autotab(this,document.mpwd.mpwd2);">
+                            <input name="mpwd2" class="input-pwd text-center" type="password" maxlength="1" onkeyup="autotab(this,document.mpwd.mpwd3);">
+                            <input name="mpwd3" class="input-pwd text-center" type="password" maxlength="1" onkeyup="autotab(0);">
+                        </form>
+                    </div>
+                    <table class="modal-tbl-product">
+                        <tbody>
+                        <th>상품</th>
+                        <th>수량</th>
+                        <th>가격</th>
+                        {{#each listProduct}}
+                            {{>itemProductModalCustomer}}
+                        {{/each}}
+                        </tbody>
+                    </table>
+                    <p>
+                    </p>
+                </div>
+                <div class="modal-footer-modalCustomer">
+                    <button id="btn-buy-modalCustomer" class="btn-ohbbang">결제하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="itemProductModalCustomer">
+    <tr>
+        <td>{{name}}</td>
+        <td>{{quantity}}개</td>
+        <td>{{price}}원</td>
+    </tr>
+</template>

@@ -1,0 +1,67 @@
+
+/****************
+****nav-tabs****
+*****************/
+.nav-tabs-admin {
+    padding: 60px 0 0 0;
+    margin: 0;
+    list-style-type: none;
+}
+.nav-tabs-admin > li {
+    text-align: center;
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+.nav-tabs-admin > li > a {
+    width: 100%;
+    display: block;
+    background-color: white;
+    color: gray;
+    line-height: 1.42857143;
+    border-bottom: 2px solid transparent;
+}
+.nav-tabs-admin > li > a.current,
+.nav-tabs-admin > li > a:hover,
+.nav-tabs-admin > li > a:active,
+.nav-tabs-admin > li > a:focus {
+    background-color: white;
+    border-bottom: 2px solid #E24B73;    /**  border-bottom을 통해서 css로 밑줄을 그을 수 있다.  **/
+    color: #E24B73;
+    text-decoration: none;
+    cursor: default;
+}
+
+/****************
+****container****
+*****************/
+
+.tbl-product-admin{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 15px;
+}
+.tbl-product-admin th{
+    font-size: small;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 8px;
+}
+.tbl-product-admin td{
+    font-size: small;
+    padding: 5px;
+    border-bottom: 1px solid #B3B3B3;
+}
+.tbl-product-admin td > div {
+    float: right;
+    margin-top: 22px;
+}
+.tbl-product-admin td > a{
+    color: black;
+}
+.tbl-product-admin td img{
+    width: 65px;
+    height: 65px;
+    float: left;
+}

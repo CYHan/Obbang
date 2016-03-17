@@ -1,0 +1,73 @@
+<template name="insertProduct">
+    <div class="section-insert-insertProduct">
+        <div class="txt-insert-insertProduct">상품명</div>
+        <input class="input-insert-insertProduct" type="text" name="input-name-insertProduct"/>
+    </div>
+    <div class="section-insert-insertProduct">
+        <div name="section-price-insertProduct">
+            <div class="txt-insert-insertProduct">정상가격</div>
+            <input class="input-insert-insertProduct" type="text" name="input-price-insertProduct"/>
+        </div>
+        <span class="glyphicon glyphicon-arrow-right"></span>
+        <div name="section-maxdiscount-insertProduct">
+            <div class="txt-insert-insertProduct">최대할인가격</div>
+            <input class="input-insert-insertProduct" type="text" name="input-maxdiscount-insertProduct"/>
+        </div>
+    </div>
+    <div class="section-insert-insertProduct">
+        <div class="txt-insert-insertProduct">상품설명</div>
+        <input class="input-insert-insertProduct" type="text" name="input-description-insertProduct"/>
+    </div>
+
+    <div class="section-insert-insertProduct">
+        <div class="txt-insert-insertProduct">상품사진</div>
+        <div class="row">
+            <div class="col-lg-3 col-xs-3 col-md-3 text-center">
+                <input type="radio" name="img-select-insertProduct" value="0" checked>
+                <img  src="/resources/img/1.jpg">
+            </div>
+            <div class="col-lg-3 col-xs-3 col-md-3 text-center">
+                <input type="radio" name="img-select-insertProduct" value="1">
+                <img src="/resources/img/2.jpg">
+            </div>
+            <div class="col-lg-3 col-xs-3 col-md-3 text-center">
+                <input type="radio" name="img-select-insertProduct" value="2">
+                <img src="/resources/img/3.jpg">
+            </div>
+            <div class="col-lg-3 col-xs-3 col-md-3 text-center">
+                <input type="radio" name="img-select-insertProduct" value="3">
+                <img src="/resources/img/1.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="section-buttons-insertProduct text-center">
+        <div class="txt-insert-insertProduct text-left">할인시간(등록시간부터)</div>
+        <div name="select-duration-insertProdcut" class="btn-circle-insertProduct btn-selected-insertProduct" content="1">
+            1시간
+        </div>
+        <div name="select-duration-insertProdcut" class="btn-circle-insertProduct" content="2">
+            2시간
+        </div>
+        <div name="select-duration-insertProdcut" class="btn-circle-insertProduct" content="3">
+            3시간
+        </div>
+    </div>
+    <button id="btn-complete-insertProduct" class="btn-ohbbang-insertProduct" href="/registerProduct">완료</button>
+</template>
+
+
+<template name="layoutInsertProduct">
+
+    <nav class="navbar navbar-fixed-top">
+        <a name="left" class="btn btn-default btn-small" href="/registerProduct">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        </a>
+        <div name="center" class="text-center">
+            메뉴 추가
+        </div>
+    </nav>
+    <div class="container-default">
+        {{>yield}}
+    </div>
+</template>

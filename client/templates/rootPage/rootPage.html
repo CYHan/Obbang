@@ -1,0 +1,79 @@
+<template name="rootPage">
+    <h4>Root menu</h4>
+    {{> acceptAdmin}}
+    {{> uploadImage}}
+</template>
+
+<template name="acceptAdmin">
+    <div class="panel panel-default">
+        <div class="panel-heading">관리자 승인하기</div>
+        <table class="table table-condensed table-striped table-borderd table-hover">
+            <tbody>
+            <tr>
+                <th rowspan="2">이름</th>
+                <th rowspan="2">매장명</th>
+                <th rowspan="2">전화번호</th>
+                <th colspan="2">위치</th>
+                <th rowspan="2">승인 / 취소</th>
+            </tr>
+            <tr>
+                <th>위도</th>
+                <th>경도</th>
+            </tr>
+            {{#each listPendingAdmin}}
+                <tr>{{>acceptAdminItem}}</tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</template>
+
+<template name="acceptAdminItem">
+    <td>
+        <label>{{profile.name}}</label>
+    </td>
+    <td>
+        <label>{{profile.store.name}}</label>
+    </td>
+    <td>
+        <label>{{profile.store.phone}}</label>
+    </td>
+    <td>
+        <label>{{profile.store.latitude}}</label>
+    </td>
+    <td>
+        <label>{{profile.store.longitude}}</label>
+    </td>
+    <td>
+        <button type="button" id="admin-accept" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-ok"></span>
+        </button>
+        <button type="button" id="admin-decline" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-remove"></span>
+        </button>
+    </td>
+</template>
+
+<template name="uploadImage">
+    <div class="panel panel-default">
+        <div class="panel-heading">사진 올리기</div>
+
+        <div class="container-fluid">
+            <div class="row">
+                {{#each uploadedImages}}
+                    <img src="{{url}}" class="img-circle-custom"/>
+                {{/each}}
+            </div>
+        </div>
+
+        <form class="uploadImage" enctype="multipart/form-data">
+            Upload image: <input type="file" name="productImage" id="productImage">
+            <input type="submit" value="Upload"/>
+        </form>
+        <div>
+            <button class="apply-admin">Apply admin with default value</button>
+            <button class="accept-admin">Accept this user as admin</button>
+            <button class="insert-default">Insert default productOnDiscount</button>
+        </div>
+    </div>
+</template>

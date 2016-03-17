@@ -1,0 +1,121 @@
+<template name="registerProduct">
+    <div>
+        <div class="section-temp-registerProduct">
+            <div class="parent-scroll-registerProduct">
+                <div class="child-scroll-registerProduct">
+                    {{#each listTempProduct}}
+                        {{> itemTempProduct}}
+                    {{/each}}
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+
+        <br>
+
+        <div class="row">
+            {{#each listRegisterProduct}}
+                {{> itemRegisterProduct}}
+            {{/each}}
+        </div>
+    </div>
+</template>
+<!--
+<span class="badge top">14</span>
+-->
+<template name="itemRegisterProduct">
+
+
+    <div class="col-lg-3 col-xs-6 col-md-3 col-sm-6">
+
+        <button type="button" name="remove-item-registerProduct" class="btn btn-small transparent-x-registerProduct">
+            <span class="custom-x-registerProduct btn-remove-registerProduct" aria-hidden="true"></span>
+        </button>
+
+        <div class="add-temp-registerProduct">
+            <table border="0">
+                <tr>
+                    <td class="td-img-registerProduct" rowspan="2">
+                        <img src="{{imageId}}" class="img-circle-registerProduct"/>
+                    </td>
+                    <td class="td-nameTime-registerProduct">
+                        <div class="txt-name-registerProduct">{{name}}</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-nameTime-registerProduct">
+                        <div class="txt-time-registerProduct">{{discountDuration}}시간</div>
+                    </td>
+                </tr>
+            </table>
+            <hr class="bar-registerProduct">
+            <table border="0">
+                <tr>
+                    <td class="td-width80-registerProduct">
+                        <div class="txt-price-registerProduct" align="center">정상가격</div>
+                        <div class="txt-priceNormal-registerProduct" align="center">{{priceNormal}}</div>
+                    </td>
+                    <td class="td-arrow-registerProduct">
+                        <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                    </td>
+                    <td class="td-width130-registerProduct">
+                        <div class="txt-price-registerProduct" align="center">최대 할인가격</div>
+                        <div class="txt-discountedPrice-registerProduct" align="center">{{priceMaxDiscount}}</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</template>
+
+<template name="itemTempProduct">
+    <div class="inside-temp-registerProduct">
+        <div style="background-image: url('{{imageId}}')" class="temp-circle-registerProduct">
+            <div class="txt-quantity-registerProduct">{{quantity}}</div>
+            <div>
+                <button name="delete-temp-registerProduct"
+                        class="btn-circle-registerProduct transparent-background-registerProduct">
+                    <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="layoutRegisterProduct">
+
+    <nav class="navbar navbar-fixed-top ">
+        <a name="left" id="btn-goAdmin-registerProduct" class="btn btn-default btn-small">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <div name="center" class="text-center">
+            상품 정보
+        </div>
+
+        <a name="right" id="btn-goInsert-registerProduct" class="btn btn-small"><span
+                class="btn-goInsert-registerProduct">+</span></a>
+    </nav>
+
+    <div class="container-registerProduct">
+        {{>yield}}
+    </div>
+
+    <nav class="navbar navbar-fixed-bottom">
+        <div>
+            <div align="left" class="section-bottomTxt-registerProduct">
+                <div>
+                    종류 : <label id="bottom-type-registerProduct">0개</label>
+                </div>
+                <div>
+                    총 개수 : <label id="bottom-total-registerProduct">0개</label>
+                </div>
+            </div>
+            <div align="right" class="section-bottomBtn-registerProduct">
+                <button id="add-product-registerProduct" class="btn-ohbbang-registerProduct">상품등록</button>
+            </div>
+        </div>
+    </nav>
+</template>

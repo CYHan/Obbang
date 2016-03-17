@@ -1,0 +1,325 @@
+
+.td-width80-registerProduct{
+    width: 80px;
+}
+.td-width130-registerProduct{
+    width: 130px;
+}
+.custom-delete{
+    position:relative;
+    float:right;
+    height: 10px;
+
+}
+hr.bar-registerProduct {
+    border: 0;
+    height: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.td-arrow-registerProduct{
+    padding-top:17px;
+    font-size: 8px;
+    color: #9d9d9d;
+}
+.badge-custom {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #E24B73;
+    border-radius: 10px;
+}
+.badge-custom:empty {
+    display: none;
+}
+
+
+.btn-ohbbang-registerProduct {
+    margin-right: 10px;
+    background-color: transparent;
+    height: 30px;
+    width: 82px;
+    border: 1px solid black;
+    border-radius: 50px;
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+}
+.btn-ohbbang-registerProduct:active {
+    border-color: #E24B73;
+    background-color: #E24B73;
+    color: white;
+}
+
+.section-bottomTxt-registerProduct{
+    float: left;
+    margin-left: 15px;
+    margin-bottom:30px;
+    display: inline-block;
+    font-weight:bold;
+}
+
+.section-bottomBtn-registerProduct{
+    display: inline-block;
+    float: right;
+    padding-top:10px;
+}
+.parent-scroll-registerProduct{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.child-scroll-registerProduct{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: 0 auto;
+    white-space: nowrap;
+}
+.container-registerProduct {
+    overflow-x: hidden;
+    padding: 50px 20px 40px 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.inside-temp-registerProduct{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    display: inline-block;
+}
+.txt-quantity-registerProduct{
+    border-radius: 50%;
+    width:96px;
+    height:96px;
+    padding-top: 35px;
+    background-size: 96px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align:center;
+    background-color: rgba(255,255,255,0.3);
+    vertical-align: middle;
+    position: relative;
+}
+.transparent-background-registerProduct{
+    background-color: #E7E7E7;
+    border-radius: 50%;
+    color: #E24B73;
+    border: 1px solid #E7E7E7;
+    width: 35px;
+    height:35px;
+    position: relative;
+    left:60px;
+    top:-30px;
+    z-index: 1;
+}
+.btn-circle-registerProduct{
+    font-size: 15px;
+    border-radius: 50%;
+}
+.transparent-x-registerProduct{
+    background-color: rgba(255,0,0,0); /*투명*/
+    width: 20px;
+    height:10px;
+    position:relative;
+    float:right;
+    padding-bottom: 5px;
+    margin-right:10px;
+}
+
+.section-temp-registerProduct{
+    background-color: #E7E7E7;
+    border-radius: 6px;
+}
+
+.custom-x-registerProduct{
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    position: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+.btn-remove-registerProduct:before {
+    content: "\e014";
+}
+
+.add-temp-registerProduct{
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #D5D5D5;
+    padding: 10px;
+}
+
+.img-circle-registerProduct{
+    border-radius: 50%;
+    width:96px;
+    height:96px;
+}
+.temp-circle-registerProduct{
+    border-radius: 50%;
+    width:96px;
+    height:96px;
+    background-size: 96px;
+}
+.img-rounded-custom{
+    border-radius: 6px;
+    width:90px;
+    height:90px;
+}
+
+.tbl-border-registerProduct{
+    width:100%;
+    border-top: 1px;
+    border-color: rgb(180,180,180);
+    margin-bottom:10px;
+    margin-top:5px;
+}
+.btn-goInsert-registerProduct{
+    font-size: 25px;
+    height: 20px;
+    color:black;
+    padding-bottom: 15px;
+}
+.td-img-registerProduct{
+    width: 100px; padding: 5px
+}
+
+.txt-name-registerProduct{
+    padding-left: 10px; padding-top: 10px; font-size: 150%; text-align: left;
+    width:100px;
+    font-weight: bold;
+}
+
+.txt-time-registerProduct{
+    color:red; text-align: left; font-size: 80%; padding-bottom: 10px; padding-left: 10px;
+}
+
+.txt-price-registerProduct{
+    font-size: 15px;
+}
+
+.txt-priceNormal-registerProduct{
+    font-size: 18px;
+}
+.txt-discountedPrice-registerProduct{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.register-temp-badge-style{
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba( 255, 255, 255, 0.5 );
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px){
+    .img-circle-registerProduct{
+        border-radius: 50%;
+        width:58px;
+        height: 58px;
+        margin: auto;
+    }
+
+    .add-temp-registerProduct{
+        width:145px;
+        height: 133px;
+        border-radius: 6px;
+        margin-bottom: 20px;
+        background-color: #D5D5D5;
+        padding: 10px;
+    }
+
+    .img-rounded-custom{
+        border-radius: 6px;
+        width:60px;
+        height: 60px;
+    }
+
+    .store-info{
+        font-size: 10px;
+    }
+
+    .txt-name-registerProduct{
+        padding-left: 10px; padding-top: 10px; font-size: 90%; text-align: left;
+        width:50px;
+        font-weight: bold;
+    }
+
+    .txt-price-registerProduct{
+         font-size: 5px;
+         padding-top:2px;
+     }
+    .txt-priceNormal-registerProduct{
+        font-size: 14px;
+        padding-top:2px;
+    }
+    .txt-discountedPrice-registerProduct{
+        font-size: 14px;
+        padding-top:2px;
+        font-weight: bold;
+    }
+
+
+    .td-img-registerProduct{
+        width: 60px; padding: 5px
+    }
+
+    .txt-time-registerProduct{
+        color:red; text-align: left; font-size: 70%; padding-bottom: 10px; padding-left: 10px;
+    }
+
+    .td-nameTime-registerProduct{
+        width: 50px;
+    }
+
+    .custom-x-registerProduct{
+        position: relative;
+        display: inline-block;
+        font-family: 'Glyphicons Halflings';
+        font-style: normal;
+        font-weight: normal;
+        line-height: 0.5;
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+    }
+
+    .temp-circle-registerProduct{
+        border-radius: 50%;
+        width:96px;
+        height:96px;
+        background-size: 96px;
+    }
+    .txt-quantity-registerProduct{
+        border-radius: 50%;
+        width:96px;
+        height:96px;
+        padding-top: 35px;
+        background-size: 96px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align:center;
+        background-color: rgba(255,255,255,0.4);
+        vertical-align: middle;
+        position: relative;
+    }
+
+
+    .btn-remove-registerProduct:before {
+        content: "\e014";
+    }
+}

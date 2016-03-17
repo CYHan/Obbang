@@ -1,0 +1,20 @@
+<template name='socialLogin'>
+    <button class="btn" id="entry-{{this}}" name="{{this}}">
+        {{#if social_unconfigured}}
+            <i class="fa fa-{{social_icon}}"></i> {{t9n "configure"}} {{capitalize this}}
+        {{else}}
+            <!--<i class="fa fa-{{social_icon}}"></i> {{capitalize this}}으로 회원가입/로그인-->
+            <i class="fa fa-{{social_icon}}"></i> 페이스북으로 로그인
+        {{/if}}
+    </button>
+</template>
+
+<template name='socialAdmin'>
+  <button class="btn" id="entry-{{this}}" name="{{this}}">
+    {{#if social_unconfigured}}
+      <i class="fa fa-{{social_icon}}"></i> {{t9n "configure"}} {{capitalize this}}
+    {{else}}
+      <i class="fa fa-{{social_icon}}"></i> 판매자로 가입하기
+    {{/if}}
+  </button>
+</template>

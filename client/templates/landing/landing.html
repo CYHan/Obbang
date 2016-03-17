@@ -1,0 +1,285 @@
+<template name='landing'>
+
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">WWW.OHBBANG.COM</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">ABOUT</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#myCarousel">OHBBANG</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">SERVICES</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">PICTURE</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <img  src="/resources/img/icon/admin/landingmain.png" class="img-responsive">
+                <p>OHBBANG은 빵집이 그때 그때 직접 할인상품을 등록하여<br>고객들에게 쿠폰을 발급해주는 빵집만을 위한 쿠폰서비스 입니다.</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">더 알아보기</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">사장님! 오늘부터 오빵하세요.</h2>
+                    <br>
+                    <br>
+                    <p class="text-faded">원하는 만큼만 간편하게 할인상품을 등록하고,<br>실시간 판매관리로 효과를 바로바로 확인할 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="carousel-text-container" style="border: 1px; border-style: solid; border-color: red" >
+            <img src="/resources/img/1.jpg" class="carouser-text-img"/>
+            <label>OHBBANG</label>
+        </div>
+        <div class="carousel-container">
+            <div id="myCarousel" class="carousel slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for Slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <!-- Set the first background image using inline CSS below. -->
+                        <div class="fill" style="background-image:url('/resources/img/1.jpg');"></div>
+                        <div class="carousel-caption">
+                            <h2>Caption 1</h2>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <!-- Set the second background image using inline CSS below. -->
+                        <div class="fill" style="background-image:url('/resources/img/2.jpg');"></div>
+                        <div class="carousel-caption">
+                            <h2>Caption 2</h2>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <!-- Set the third background image using inline CSS below. -->
+                        <div class="fill" style="background-image:url('/resources/img/3.jpg');"></div>
+                        <div class="carousel-caption">
+                            <h2>Caption 3</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="icon-prev"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="icon-next"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">SERVICES</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="/resources/img/icon/admin/1.png" class="fa fa-4x wow bounceIn text-primary" alt="" >
+                        <h3>SAVE MONEY</h3>
+                        <p class="text-muted">남을 수 있는 상품의 판매촉진과<br>음식물 쓰레기 처리비용 경감을 통해<br>비용을 아낄 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="/resources/img/icon/admin/2.png" class="fa fa-4x wow bounceIn text-primary" data-wow-delay=".1s" alt="" >
+                        <h3>MAKE MONEY</h3>
+                        <p class="text-muted">지역기반 할인 정보를 통해<br>매장 방문고객을 유치할 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <div class="service-box">
+                        <img src="/resources/img/icon/admin/3.png" class="fa fa-4x wow bounceIn text-primary" data-wow-delay=".2s" alt="" >
+                        <h3>CLIENT PARTICIPATION</h3>
+                        <p class="text-muted">재미를 동반한 고객 참여형 쿠폰으로<br>고객참여도를 높일 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="padding-zero" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="/resources/img/portfolio/1.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="/resources/img/portfolio/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="/resources/img/portfolio/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="/resources/img/portfolio/4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="/resources/img/portfolio/5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="/resources/img/portfolio/6.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+<aside >
+        <div class="container">
+            <div class="call-to-action text-center">
+                <h2>OHBBANG이 마음에 드시나요?<br>메일을 등록해주시면 오빵의 출시소식을 알려드릴게요.</h2>
+                <input id="inputEmail" type="email" class="form-control text-center">
+                <a id="registerUser" class="btn btn-primary btn-xl">등록</a>
+                {{#each listEmail}}
+                    <h3>{{email}}</h3>
+                {{/each}}
+            </div>
+        </div>
+</aside>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">CONTACT</h2>
+                    <hr class="primary">
+                    <p>OHBBANG에 대해 더욱 자세한 사항이 궁금하시거나 제휴문의는 아래 연락처 또는 이메일 주소로 연락바랍니다.</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                    <p>123-456-6789</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:your-email@your-domain.com">favorie@favorie.co</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plugin JavaScript -->
+    <script src="/resources/js/jquery.easing.min.js"></script>
+    <script src="/resources/js/jquery.fittext.js"></script>
+    <script src="/resources/js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/resources/js/creative.js"></script>
+</template>

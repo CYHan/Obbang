@@ -1,0 +1,95 @@
+.section-insert-insertProduct,.section-buttons-insertProduct{
+    display: block;
+    margin: 20px auto 20px auto;
+}
+
+div.txt-insert-insertProduct{
+    margin-bottom: 3px;
+}
+
+.section-insert-insertProduct input.input-insert-insertProduct{
+    padding-left: 10px;
+    border-radius: 5px;
+    height: 38px;
+    border: 1px solid #B3B3B3;
+}
+.section-insert-insertProduct input[name=input-description-insertProduct],input[name=input-name-insertProduct]{
+    width: 100%;
+}
+.section-insert-insertProduct input[name=input-price-insertProduct],input[name=input-maxdiscount-insertProduct]{
+    width: 100%;
+}
+
+.section-buttons-insertProduct .btn-circle-insertProduct{
+    display: inline-block;
+    margin-right: 5px;
+    background-color: white;
+    border: 1px solid #B3B3B3;
+    color: #B3B3B3;
+    text-align: center;
+    border-radius: 50%;
+    width: 82px;
+    height: 82px;
+    line-height: 82px;
+}
+
+.section-buttons-insertProduct .btn-circle-insertProduct.btn-selected-insertProduct,
+.section-buttons-insertProduct .btn-circle-insertProduct:hover,
+.section-buttons-insertProduct .btn-circle-insertProduct:active,
+.section-buttons-insertProduct .btn-circle-insertProduct:focus {
+    background-color: #E24B73;
+    border: 1px solid #B3B3B3;
+    color: white;
+}
+.section-insert-insertProduct span{
+    display: inline-block;
+    margin-left: 5px;
+    color: #B3B3B3;
+}
+.section-insert-insertProduct div[name=section-price-insertProduct]{
+    display: inline-block;
+    width: 45%;
+}
+.section-insert-insertProduct div[name=section-maxdiscount-insertProduct]{
+    display: inline-block;
+    float: right;
+    width: 45%;
+}
+.section-insert-insertProduct input[name=img-select]{
+    height: 15px;
+    width: 15px;
+}
+.section-insert-insertProduct img{
+    display: block;
+    margin: 0 auto;
+    width: 65px;
+    width: 65px;
+    height: 65px;
+}
+
+.btn-ohbbang-insertProduct {
+    background-color: transparent;
+    height: 30px;
+    width: 82px;
+    border: 1px solid black;
+    border-radius: 50px;
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+}
+.btn-ohbbang-insertProduct:active {
+     border-color: #E24B73;
+     background-color: #E24B73;
+     color: white;
+ }
+
+button#btn-complete-insertProduct{
+    width: 80px;
+    position: static;
+    margin: 40px auto 10px auto;
+    display: block;
+}
+
+
+
+

@@ -1,0 +1,40 @@
+<template name="detailProduct">
+    {{#with item}}
+        <div class="container-detail-detailProduct">
+            <table class="full-width-detailProduct">
+                <tr class="full-width-detailProduct">
+                    <td class="upper-detail-detailProduct">
+                        <div class="img-section-detailProduct">
+                            <img src="{{imageId}}" class="img-detail-detailProduct"/>
+                        </div>
+                        <div class="img-caption-detailProduct">
+                            {{storeName}}<br>
+                            <div class="section-clock-detailProduct"><span class="countdown"></span> 남음</div>
+                            <div class="section-price-detailProduct">{{priceCurrent}} 원</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="lower-detail-detailProduct">
+                <span class="txt-name-detailProduct">{{name}}</span>
+                <hr class="bar-detailProduct">
+                {{description}}
+            </div>
+        </div>
+    {{/with}}
+</template>
+
+<template name="layoutDetailProduct">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <a name="left" class="btn" href="/">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        </a>
+        <div name="center" class="text-center">
+                        상품 정보
+        </div>
+    </nav>
+    <div class="container-default" >
+        {{>yield}}
+    </div>
+
+</template>

@@ -1,0 +1,13 @@
+<template name="navbarMenu">
+
+    {{#if currentUser}}
+        <!--<a class="navtop-account" href="{{pathFor route='profile'}}">Edit Profile</a>-->
+        <a class="navtop-account" href="{{pathFor route='entrySignOut'}}">Logout</a>
+    {{else}}
+        <a class="navtop-account" href="{{pathFor route='login'}}">Login</a>
+    {{/if}}
+    {{#if isInRole 'Admin'}}
+        <a id="navtop-go-admin" class="navtop-account" href="{{pathFor route='admin'}}">Admin</a>
+        <a id="navtop-go-customer" class="navtop-account hidden" href="{{pathFor route='customer.go'}}">Customer</a>
+    {{/if}}
+</template>

@@ -1,0 +1,52 @@
+<template name='login'>
+
+
+    <img src="/resources/img/ui/intro/logo-intro.png" class="img-responsive">
+    <div class="{{containerCSSClass}}">
+        <div class="{{rowCSSClass}}">
+            {{#if logo}}
+                <div class="entry-logo">
+                    <a href="/"><img src="{{logo}}" alt="logo"></a>
+                </div>
+            {{/if}}
+
+            <!-- Allow only FB login for now. -->
+            <div class="entry col-md-4 col-md-offset-4">
+                {{#if otherLoginServices}}
+                    <div class="entry-social">
+                        {{#each loginServices}}
+                            {{> socialLogin}}
+                        {{/each}}
+                    </div>
+                {{/if}}
+
+                <div class="email-option">
+                    <strong class="line-thru or-sign-in">&nbsp;</strong>
+                </div>
+
+                {{#if otherLoginServices}}
+                    <div class="entry-social">
+                        {{#each loginServices}}
+                            {{> socialAdmin}}
+                        {{/each}}
+                    </div>
+                {{/if}}
+
+                {{> entryError}}
+
+                {{#if talkingToServer}}
+                    {{> spinner}}
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="layoutLogin">
+    <div class="login-container">
+        <a name="left" href="/" class="btn btn-login">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        </a>
+        {{>yield}}
+    </div>
+</template>

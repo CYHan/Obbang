@@ -1,0 +1,39 @@
+.section-insert-registerAdmin{
+    display: block;
+    margin: 30px auto 30px auto;
+}
+div.txt-insert-registerAdmin{
+    margin-bottom: 3px;
+}
+.section-insert-registerAdmin input.input-insert-registerAdmin{
+    border-radius: 5px;
+    width: 100%;
+    height: 38px;
+    border: 1px solid #B3B3B3;
+    padding-left: 10px;
+}
+.section-insert-registerAdmin > form {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.section-insert-registerAdmin > form > input{
+    display: inherit;
+    margin: 0 10px 0 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: #E24B73;
+    background-color: transparent;
+    border: 1px solid #B3B3B3;
+    border-radius: 5px;
+}
+
+button#apply-admin{
+    width: 80px;
+    position: static;
+    margin: 50px auto;
+    display: block;
+}

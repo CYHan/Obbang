@@ -1,0 +1,117 @@
+.section-storename-saleManage{
+    width: 100%;
+    height: 70px;
+    line-height: 48px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight:bold;
+    background-color: #f0f0f0;
+    font-size: 13px;
+}
+
+.txt-storename-saleManage{
+    float: right;
+    font-size:8px;
+}
+.tbl-salemoney-saleManage{
+    border: 1px solid #bcbcbc;
+    width: 100%;
+}
+.tbl-salemoney-saleManage th{
+    text-align: center;
+    font-size: 19px;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+.tbl-salemoney-saleManage td{
+    color: #bcbcbc;
+    text-align: center;
+    padding-top: 18px;
+}
+
+.section-saleterm-saleManage{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-weight:bold;
+}
+
+.section-saletermdate-saleManage{
+    text-align:center;
+    color: #bcbcbc;
+    font-size: 15px;
+}
+
+.section-btn-saleManage{
+    width:100%;
+    height: 80px;
+    text-align:center;
+}
+
+.btn-term-saleManage
+{
+    display:inline-block;
+    border: 1px solid #bcbcbc;
+    background-color:white;
+    border-radius: 5px;
+    font-weight: 300;
+    width:70px;
+    height:30px;
+    color: #bcbcbc;
+    padding: 6px 12px;
+    margin: 18px 5px;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    vertical-align: middle;
+}
+@media (min-width: 340px) {
+    .btn-term-saleManage {
+        width: 70px;
+    }
+}
+@media (max-width: 339px) {
+    .btn-term-saleManage {
+        width: 60px;
+    }
+}
+.btn-term-saleManage:focus,
+.btn-term-saleManage.curr,
+.btn-term-saleManage:active {
+    border: 0;
+    background-color:#E24B73;
+    color: white;
+}
+
+.tbl-product-saleManage{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 15px;
+}
+.tbl-product-saleManage th{
+    font-size: small;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 8px 10px 8px 0px;
+}
+.tbl-product-saleManage td{
+    font-size: 11px;
+    padding: 8px 10px 8px 0px;
+    border-bottom: 1px solid #B3B3B3;
+}
+.tbl-product-saleManage td > span {
+    font-size: 14px;
+}
+.tbl-product-saleManage td > img{
+    width: 65px;
+    height: 65px;
+    float: right;
+    margin: 0px 10px 0px 0px;
+}
+.th-numsize-saleManage{
+    width:12%;
+}
+.th-pricesize-saleManage{
+    width: 18%;
+}

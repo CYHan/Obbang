@@ -1,0 +1,77 @@
+.container-detail-detailProduct {
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.full-width-detailProduct {
+    width:100%;
+    margin-left:0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: inherit;
+}
+.upper-detail-detailProduct {
+    width: 100%;
+    height: 240px;
+    position: relative;
+}
+
+.img-section-detailProduct {
+    width: 100%;
+    height: 240px;
+    position: relative;
+}
+
+.img-detail-detailProduct {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.img-caption-detailProduct {
+    position: absolute;
+    float: left;
+    bottom: 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+
+    width: 100%;
+    padding: 5px;
+}
+
+.section-clock-detailProduct {
+    font-size: large;
+    float: left;
+    display: inline-block;
+}
+
+.section-clock-detailProduct .countdown {
+}
+
+.section-price-detailProduct {
+    font-size: large;
+    float: right;
+    display: inline-block;
+}
+
+.lower-detail-detailProduct {
+    width: 100%;
+    padding: 5px;
+}
+
+hr.bar-detailProduct {
+    border: 0;
+    height: 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 5px -5px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.txt-name-detailProduct {
+    font-weight: bold;
+    font-size: larger;
+}

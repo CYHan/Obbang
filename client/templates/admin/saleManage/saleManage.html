@@ -1,0 +1,32 @@
+<template name="saleManage">
+        <div class="section-storename-saleManage"> {{nameStore}} <span class="txt-storename-saleManage">Last edit made {{dateLastEdit}}</span></div>
+        <table class="tbl-salemoney-saleManage">
+            <tr>
+                <td>총 판매금액</td>
+                <td>기간 판매금액</td>
+            </tr>
+            <tr>
+                <th>{{saleSumAll}}원</th>
+                <th>{{saleSumTerm}}원</th>
+            </tr>
+        </table>
+        <div class="section-saleterm-saleManage">판매기간</div>
+        <div class="section-saletermdate-saleManage">{{termPre}}~{{termToday}}</div>
+        <div class="section-btn-saleManage">
+            <button type="button" class="btn-term-saleManage curr" name="today">오늘</button>
+            <button type="button" class="btn-term-saleManage" name="week">1주일</button>
+            <button type="button" class="btn-term-saleManage" name="month">1개월</button>
+            <button type="button" class="btn-term-saleManage" name="threemonth">3개월</button>
+        </div>
+        <table class="tbl-product-saleManage">
+            <tbody>
+            <th colspan="2">상품</th>
+            <th class="th-numsize-saleManage">수량</th>
+            <th>판매시간</th>
+            <th class="th-pricesize-saleManage">가격</th>
+            {{#each listSaleProduct}}
+                {{>itemSaleProduct}}
+            {{/each}}
+            </tbody>
+        </table>
+</template>

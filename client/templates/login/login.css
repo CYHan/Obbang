@@ -1,0 +1,17 @@
+.login-container{
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: url(/resources/img/ui/intro/intro-background.png);
+}
+.login-container .btn-login{
+    color: white;
+}
+.login-container img{
+    margin : 80px auto 10px auto;
+}
